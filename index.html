@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-md-12">
+          <h1 class="display-4">
+            Welcome to Primeware's demo chat app!
+          </h1>
+          <br />
+          <br />
+          <p>
+            Below there are two profiles for testing purposes. It is recommended
+            to use one profile in a normal browser and the other in incognito
+            mode.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mt-5 mb-2">
+        <div class="col-md-6">
+          <p>
+            One is Victor Deo's profile with the credentials below: <br />
+            <br />
+            Email: primeware1234@gmail.com <br />
+            Password: primeware1234
+          </p>
+        </div>
+
+        <div class="col-md-6">
+          <p>
+            The other is Emmanuel Mnzava's profile with the credentials below:
+            <br />
+            <br />
+            Email: primeware5678@primeware.com <br />
+            Password: primeware5678
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <br /><br />
+
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 30rem;">
+              <div class="card-header">
+                <h4>Login</h4>
+              </div>
+              <div class="card-body">
+                <form onsubmit="event.preventDefault(); return login();">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      autocomplete="off"
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >We'll never share your email with anyone else.</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input
+                      autocomplete="off"
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/authentication.js"></script>
+  </body>
+</html>
