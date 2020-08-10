@@ -34,11 +34,11 @@ function getMessages() {
           messageBody.className = "msg_cotainer_send";
           messageBody.innerText = snapshot.val().message;
 
-          var time = document.createElement("span");
-          time.className = "msg_time_send";
-          time.innerHTML = moment(snapshot.val().time).format("lll");
+          // var time = document.createElement("span");
+          // time.className = "msg_time_send";
+          // time.innerHTML = moment(snapshot.val().time).format("lll");
 
-          messageBody.appendChild(time);
+          // messageBody.appendChild(time);
           messageContainer.appendChild(messageBody);
 
           messagesList.appendChild(messageContainer);
@@ -50,11 +50,11 @@ function getMessages() {
           messageBody.className = "msg_cotainer";
           messageBody.innerText = snapshot.val().message;
 
-          var time = document.createElement("span");
-          time.className = "msg_time";
-          time.innerHTML = moment(snapshot.val().time).format("lll");
+          // var time = document.createElement("span");
+          // time.className = "msg_time";
+          // time.innerHTML = moment(snapshot.val().time).format("lll");
 
-          messageBody.appendChild(time);
+          // messageBody.appendChild(time);
           messageContainer.appendChild(messageBody);
 
           messagesList.appendChild(messageContainer);
